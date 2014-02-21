@@ -1,0 +1,18 @@
+
+
+Zhiping Tan 204021272
+Venudhar Ravishankar 304155317
+
+
+Lab 1a:
+	Works in all our cases and provided cases except for subshell (if an operator is operating on two subshells, then the first
+	one may not display as a subshell)
+	Note: spec was not clear regarding semicolon vs. newline; every newline (except whitespace newline) is treated as exact same as semicolon,
+	so semicolon (out of subshell) separates two command trees and semicolon within subshell is of type sequence command
+	Does not allow input/output redirection of a subshell, but this does not matter because the specification stated that this is not required
+	May have small, unlikely operator-subshell syntax error checking problems
+Lab 1b:
+	Executes all commands in the spec except for exec and in the order that they are given in the script
+Lab 1c:
+	Time travels the shell. Does not travel within subshell (i.e. sequence commands are performed in order)
+Completed Feb. 13, 2014
